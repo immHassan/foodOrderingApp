@@ -3,7 +3,7 @@
 
 ### Live URL:
 
-The project has been implemented on an AWS server. Kindly refer to the following IP address for accessing the APIs.
+The implementation of the project has taken place on an AWS server. Please use the below url to access the APIs.
 
 http://appdevelopment.pro:3000/
 
