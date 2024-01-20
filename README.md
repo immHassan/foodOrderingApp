@@ -1,5 +1,20 @@
 # Case Study: Food Ordering App
 
+### Initial Setup Guide:
+
+Run the command below to containerize the application:
+
+$ docker compose up
+
+Once the containers are up and running, we can access the NestJS application by visiting http://localhost:3000 in our web browser and pgAdmin by visiting http://localhost:5050 in our web browser.
+
+Login to pgAdmin by using the email and password we specified earlier in the docker-compose.yml file, and then we will see this:
+
+To rebuild our app container because of the changes made, we execute the command below:
+
+$ docker compose up --build
+
+
 ### Features:
 
     Foodie Can See List of Dishes Available: ✔️
