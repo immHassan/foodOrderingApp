@@ -24,7 +24,7 @@ export class OrdersController {
     
     //To get All Dishes
     @Get('/')
-    async getOrders(@Req() req, @Query() paginationDto: PaginationDto): Promise<any> {
+    async getOrders(@Query() paginationDto: PaginationDto): Promise<any> {
         const data = await this.ordersService.getOrders(paginationDto);
         const response = { data: data, message: 'Data fetched successfully', status: true }
         return response;
