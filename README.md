@@ -16,7 +16,13 @@
 
     Database ERD (Entity Relationship Diagram): ✔️	
 
-    High-Level Architecture Diagram: ✔️	
+![alt text](https://github.com/immHassan/foodOrderingApp/blob/main/diagrams/ERD.PNG?raw=true)
+
+
+
+    High-Level Architecture Diagram: ✔️
+	
+![alt text](https://github.com/immHassan/foodOrderingApp/blob/main/diagrams/Architecture%20Diagram.PNG?raw=true)
     
 ### Development Aspects:
 
