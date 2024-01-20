@@ -15,7 +15,7 @@ import {redisStore} from 'cache-manager-redis-store';
     CacheModule.register({isGlobal: true}),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'http://appdevelopment.pro',
+      host: '0.0.0.0',
       port: 5432,
       username: 'postgres',
       password: 'postgres',
