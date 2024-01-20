@@ -14,8 +14,7 @@
 
     Note: Please find the API's Postman collection at root directory.
 
-    ![alt text](https://github.com/immHassan/foodOrderingApp/blob/main/diagrams/API.PNG?raw=true)
-
+![alt text](https://github.com/immHassan/foodOrderingApp/blob/main/diagrams/API.PNG?raw=true)
 
 ### System Design:
 
