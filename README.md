@@ -1,6 +1,16 @@
 # Case Study: Food Ordering App
 
+
+### Live URL:
+
+The project has been implemented on an AWS server. Kindly refer to the following IP address for accessing the APIs.
+
+http://appdevelopment.pro:3000/
+
+
 ### Initial Setup Guide:
+
+
 
 Run the command below to containerize the application:
 
