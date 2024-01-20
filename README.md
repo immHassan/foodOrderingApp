@@ -2,7 +2,7 @@
 
 ### Features:
 
-    Foodie Can See List of Dishes Available: :heavy_check_mark:	
+    Foodie Can See List of Dishes Available: :heavy_check_mark
 
     Foodie Can See Chef Dishes: :heavy_check_mark:	
 
