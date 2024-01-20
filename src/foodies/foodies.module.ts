@@ -3,12 +3,12 @@ import { FoodiesController } from './foodies.controller';
 import { FoodiesService } from './foodies.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Foodie } from './foodie.entity';
-import { JwtStrategy } from 'src/jwt.strategy';
+import { JwtStrategy } from '../jwt.strategy';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { OrdersService } from 'src/orders/orders.service';
-import { Order } from 'src/orders/order.entity';
-import { OrderItems } from 'src/orders/orderItems.entity';
+import { OrdersService } from '../orders/orders.service';
+import { Order } from '../orders/order.entity';
+import { OrderItems } from '../orders/orderItems.entity';
 
 
 @Module({

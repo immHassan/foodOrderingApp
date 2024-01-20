@@ -1,12 +1,10 @@
 import { Body, Controller, Get, Param, Post, Query, Req, UseGuards } from '@nestjs/common';
 import { ChefsService } from './chefs.service';
 import { CreateChefDto } from './dto/create-chef.dto';
-import { Chef } from './chef.entity';
 import { LoginChefDto } from './dto/login-chef.dto';
-import { DishesService } from 'src/dishes/dishes.service';
+import { DishesService } from '../dishes/dishes.service';
 import { AuthGuard } from '@nestjs/passport';
-import { Dish } from 'src/dishes/dish.entity';
-import { PaginationDto } from 'src/dishes/dto/pagination.dto';
+import { PaginationDto } from '../dishes/dto/pagination.dto';
 
 
 

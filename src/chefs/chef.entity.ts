@@ -1,4 +1,4 @@
-import { Dish } from 'src/dishes/dish.entity';
+import { Dish } from '../dishes/dish.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 //import { Dish } from '../dishes/dish.entity';
 

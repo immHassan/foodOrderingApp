@@ -1,14 +1,10 @@
 import { Body, Controller, Get, Param, Post, Query, Req, UseGuards } from '@nestjs/common';
 import { FoodiesService } from './foodies.service';
 import { CreateFoodieDto } from './dto/create-foodie.dto';
-import { Foodie } from './foodie.entity';
 import { LoginFoodieDto } from './dto/login-foodie.dto';
-import { DishesService } from 'src/dishes/dishes.service';
 import { AuthGuard } from '@nestjs/passport';
-import { Dish } from 'src/dishes/dish.entity';
-import { PaginationDto } from 'src/dishes/dto/pagination.dto';
-import { OrdersService } from 'src/orders/orders.service';
-import { Order } from 'src/orders/order.entity';
+import { PaginationDto } from '../dishes/dto/pagination.dto';
+import { OrdersService } from '../orders/orders.service';
 
 
 

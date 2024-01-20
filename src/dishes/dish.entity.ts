@@ -1,4 +1,4 @@
-import { Chef } from 'src/chefs/chef.entity';
+import { Chef } from '../chefs/chef.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, ManyToOne, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity()

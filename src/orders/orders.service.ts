@@ -5,8 +5,7 @@ import { Order } from './order.entity';
 import { OrderItems } from './orderItems.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Chef } from 'src/chefs/chef.entity';
-import { Foodie } from 'src/foodies/foodie.entity';
+import { Foodie } from '../foodies/foodie.entity';
 
 @Injectable()
 export class OrdersService {

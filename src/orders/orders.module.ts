@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
 import { OrdersController } from './orders.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { JwtStrategy } from 'src/jwt.strategy';
+import { JwtStrategy } from '../jwt.strategy';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { OrdersService } from 'src/orders/orders.service';
-import { Order } from 'src/orders/order.entity';
-import { OrderItems } from 'src/orders/orderItems.entity';
-import { FoodiesService } from 'src/foodies/foodies.service';
-import { Foodie } from 'src/foodies/foodie.entity';
+import { OrdersService } from '../orders/orders.service';
+import { Order } from '../orders/order.entity';
+import { OrderItems } from '../orders/orderItems.entity';
+import { FoodiesService } from '../foodies/foodies.service';
+import { Foodie } from '../foodies/foodie.entity';
 
 
 @Module({

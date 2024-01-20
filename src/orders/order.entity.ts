@@ -1,4 +1,4 @@
-import { Foodie } from 'src/foodies/foodie.entity';
+import { Foodie } from '../foodies/foodie.entity';
 
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, ManyToOne, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import { OrderItems } from './orderItems.entity';

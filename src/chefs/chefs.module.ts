@@ -3,12 +3,11 @@ import { ChefsController } from './chefs.controller';
 import { ChefsService } from './chefs.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Chef } from './chef.entity';
-import { AuthModule } from 'src/auth/auth.module';
-import { JwtStrategy } from 'src/jwt.strategy';
-import { Dish } from 'src/dishes/dish.entity';
+import { JwtStrategy } from '../jwt.strategy';
+import { Dish } from '../dishes/dish.entity';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { DishesService } from 'src/dishes/dishes.service';
+import { DishesService } from '../dishes/dishes.service';
 
 
 @Module({

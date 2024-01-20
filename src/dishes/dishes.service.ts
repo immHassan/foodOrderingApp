@@ -5,7 +5,7 @@ import { PaginationDto } from './dto/pagination.dto';
 import { Dish } from './dish.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Chef } from 'src/chefs/chef.entity';
+import { Chef } from '../chefs/chef.entity';
 
 @Injectable()
 export class DishesService {

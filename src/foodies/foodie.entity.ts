@@ -1,8 +1,5 @@
-import { Dish } from 'src/dishes/dish.entity';
-import { Order } from 'src/orders/order.entity';
-
+import { Order } from '../orders/order.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
-//import { Dish } from '../dishes/dish.entity';
 
 @Entity()
 export class Foodie {

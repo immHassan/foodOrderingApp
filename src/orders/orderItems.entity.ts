@@ -1,4 +1,3 @@
-import { Chef } from 'src/chefs/chef.entity';
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany, ManyToOne } from 'typeorm';
 import { Order } from './order.entity';
 
