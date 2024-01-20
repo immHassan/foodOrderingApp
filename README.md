@@ -30,10 +30,7 @@
     
 ### Development Aspects:
 
-    Unit Testing:
-        Implement unit tests for critical components of the application, such as order placement, dish creation, and user authentication.
-        Use a testing framework to ensure code quality and functionality.
-
+    Unit Testing: Not yet
     Use Postgres Database: ✔️	
 
     Framework Selection: NestJs ✔️	
@@ -41,10 +38,7 @@
 ### Good-to-Have:
 
     Docker + Docker Compose Setup: ✔️	
-
-    Caching for Improved API Responses:
-        Implement caching mechanisms to enhance the app's performance by reducing redundant database queries.
-
+    Caching for Improved API Responses: ✔️
     Payload Validation using Joi or Zod: Joi ✔️	
     Error Handling: ✔️
 
