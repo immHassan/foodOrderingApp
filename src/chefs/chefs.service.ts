@@ -33,15 +33,15 @@ export class ChefsService {
         chef.email = createChefDto.email;
         chef.userName = createChefDto.userName;
         chef.password = hashedPassword;
-        chef.password = createChefDto.image;
+        chef.image = createChefDto.image;
 
 
 
-        const isUserExist = await this.chefRepository.findOne({where:{ 'userName': chef.userName }});
+        const isUserExist = await this.chefRepository.findOne({ where: { 'userName': chef.userName } });
         if (isUserExist) {
             throw new BadRequestException('The userName is already taken. Please choose another one');
         }
-        const isEmailExist = await this.chefRepository.findOne({where:{ 'email': chef.email }});
+        const isEmailExist = await this.chefRepository.findOne({ where: { 'email': chef.email } });
         if (isEmailExist) {
             throw new BadRequestException('The email is already taken. Please choose another one');
         }
@@ -74,18 +74,18 @@ export class ChefsService {
         loginChefDto: LoginChefDto,
     ): Promise<{ accessToken: string }> {
         const { userName, password } = loginChefDto;
-        const chef = await this.chefRepository.findOne({where:{ 'userName': userName }});
-
-        const chefData = {
-            id:chef.id,  //So we can get it from Jwt token
-            image:chef.image,
-            firstName: chef.firstName,
-            lastName: chef.lastName,
-            email: chef.email,
-            userName: chef.userName
-        };
+        const chef = await this.chefRepository.findOne({ where: { 'userName': userName } });
 
         if (chef && (await bcrypt.compare(password, chef.password))) {
+
+            const chefData = {
+                id: chef.id,  //So we can get it from Jwt token
+                image: chef.image,
+                firstName: chef.firstName,
+                lastName: chef.lastName,
+                email: chef.email,
+                userName: chef.userName
+            };
             return {
                 accessToken: this.jwtService.sign(chefData),
             };

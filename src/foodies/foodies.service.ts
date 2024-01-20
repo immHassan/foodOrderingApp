@@ -74,6 +74,7 @@ export class FoodiesService {
         if (foodie && (await bcrypt.compare(password, foodie.password))) {
 
             const foodieData = {
+                id:foodie.id,
                 firstName: foodie.firstName,
                 lastName: foodie.lastName,
                 email: foodie.email,
